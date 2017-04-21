@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#board {
+  width: 1000px;
+  height: 600px;
+  background-image: url("images/back2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -5;
+}
+
+.monster {
+  width: 50px;
+  height: 60px;
+  background-image: url("images/ant.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+}
+
+.fruit {
+  width: 80px;
+  height: 65px;
+  background-image: url("images/fruit2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  z-index: 2;
+}
+
+.score {
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  text-align: center;
+}
+
+.score h4 {
+  margin-bottom: 5px;
+}
+
+.score h1 {
+  margin-top: 5px;
+  font-size: 40px;
+}
+
+.quantity {
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  text-align: center;
+}
+
+.quantity h4 {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.quantity h1 {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.game-over {
+  background: grey;
+  height: 100px;
+  width: 300px;
+  visibility: hidden;
+  position: absolute;
+  top: 250px;
+  left: 350px;
+  border-radius: 30px;
+  text-align: center;
+  z-index: 1;
+}
+
+.game-over h1 {
+  margin: 0;
+  padding: 0;
+  margin-top: 35px;
+}
+
+#start-game {
+  height: 100px;
+  width: 300px;
+  position: absolute;
+  top: 250px;
+  left: 350px;
+  border-radius: 30px;
+  visibility: visible;
+  font-size: 30px;
+}
+
+#missingF {
+  display: none;
+}
+
+#missingM {
+  display: none;
+}
+
+.blood {
+  width: 50px;
+  height: 60px;
+  background-image: url("images/blood.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+}

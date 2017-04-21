@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AntAttack</title>
+  <link rel="stylesheet" type="text/css" href="animate.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</head>
+<body>
+
+  <section id="board">
+
+  <button class="animated shake" id="start-game">
+    START GAME
+  </button>
+
+    <span class="score">
+      <h4>SCORE</h4>
+      <h1 id="points">0</h1>
+    </span>
+
+    <span class="fruit" id="missingF">
+
+    </span>
+
+    <span class="monster" id="missingM">
+
+    </span>
+
+    <audio id="hit-sound" src="sound/hit-sound.mp3"></audio>
+
+    <audio id="error" src="sound/error.mp3"></audio>
+
+    <audio id="wrong" src="sound/wrong.mp3"></audio>
+
+
+    <span class="quantity">
+      <h4>ANTS</h4>
+      <h1 id="quantM">0</h1>
+    </span>
+
+    <span class="game-over">
+
+    </span>
+
+  </section>
+
+</body>
+<script src="board.js"></script>
+<script src="monster.js"></script>
+<script src="fruit.js"></script>
+<script src="script.js"></script>
+</html>
