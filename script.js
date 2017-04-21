@@ -4,7 +4,7 @@ $(document).ready(function(){
   var monsterQuantity = 0;
   var game = new Board();
   var moveAnt = 100;
-  var includeAnts = 800;
+  var includeAnts = 900;
   var keys = {};
 
   $('#start-game').on('click', function(){

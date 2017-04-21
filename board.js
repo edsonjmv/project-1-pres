@@ -8,6 +8,7 @@ function Board(monster, fruit) {
 
 Board.prototype.fruitEaten = function() {
    var that = this;
+   var collision = false;
    this.monsterArmy.forEach(function(e){
      var monsterY = $("#"+e.monsterID).css("top").slice(0,-2);
      var monsterX = $("#"+e.monsterID).css("left").slice(0,-2);
@@ -19,9 +20,9 @@ Board.prototype.fruitEaten = function() {
          monsterX + 65 > fruitX &&
          monsterY < fruitY + 65 &&
          80 + monsterY > fruitY) {
-           console.log('collision');
+           collision = true;
         }
-
+        return collision;
      });
    });
 };
